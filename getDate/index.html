@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createNote(title, body) {
+        return {
+          title,
+          body,
+          createdAt: new Date(),
+          getSummary() {
+            return ` title : ${
+              this.title
+            } - Date: ${this.createdAt.toLocaleDateString("fa-IR", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}`;
+          },
+        };
+      }
+      let note = createNote("your great!", "this is a note body");
+
+      console.log(note);
+      console.log(note.getSummary());
+    </script>
+  </body>
+</html>
