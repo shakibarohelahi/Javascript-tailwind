@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript/drum kit</title>
+
+
+      <style>
+    body {
+      background-image: url('./background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  </head>
+  <body>
+   <body class="m-0 p-0 min-h-screen flex items-center justify-center font-sans">
+  <div class="font-serif flex flex-wrap justify-center items-center text-center min-h-screen gap-4 ">
+    <span onclick="playSound()" data-sound="1" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">A</div>
+      <div class="text-xs text-yellow-500 font-[10px]">CLAP</div>
+    </span>
+    <span onclick="playSound()" data-sound="2" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">S</div>
+      <div class="text-xs text-yellow-500 font-[10px]">HIHAT</div>
+    </span>
+    <span onclick="playSound()" data-sound="3" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">D</div>
+      <div class="text-xs text-yellow-500 font-[10px]">KICK</div>
+    </span>
+    <span onclick="playSound()" data-sound="4" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">F</div>
+      <div class="text-xs text-yellow-500 font-[10px]">OPENHAT</div>
+    </span>
+    <span onclick="playSound()" data-sound="5" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">G</div>
+      <div class="text-xs text-yellow-500 font-[10px]">BOOM</div>
+    </span>
+    <span onclick="playSound()" data-sound="6" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">H</div>
+      <div class="text-xs text-yellow-500 font-[10px]">RIDE</div>
+    </span>
+    <span onclick="playSound()" data-sound="7" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">J</div>
+      <div class="text-xs text-yellow-500 font-[10px]">SNAIR</div>
+    </span>
+    <span onclick="playSound()" data-sound="8" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">K</div>
+      <div class="text-xs text-yellow-500 font-[10px]">TOM</div>
+    </span>
+    <span onclick="playSound()" data-sound="9" class="box w-[90px] h-[70px] flex flex-col items-center justify-center text-white bg-black/50 border-2 border-gray-950 cursor-pointer hover:scale-110 hover:border-yellow-400 hover:shadow-[0_0_1rem_#ffc600] transition-all duration-75">
+      <div class="text-lg font-bold">L</div>
+      <div class="text-xs text-yellow-500 font-[10px]">TINK</div>
+    </span>
+      <audio id="sound1" src="sounds/clap.wav"></audio>
+      <audio id="sound2" src="sounds/hihat.wav"></audio>
+      <audio id="sound3" src="sounds/kick.wav"></audio>
+      <audio id="sound4" src="sounds/snare.wav"></audio>
+      <audio id="sound5" src="sounds/tink.wav"></audio>
+      <audio id="sound6" src="sounds/boom.wav"></audio>
+      <audio id="sound7" src="sounds/openhat.wav"></audio>
+      <audio id="sound8" src="sounds/ride.wav"></audio>
+      <audio id="sound9" src="sounds/tom.wav"></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
