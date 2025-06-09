@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <title>Document</title>
+  </head>
+
+ <body class="m-0 flex items-center justify-center min-h-screen bg-red-50">
+  <div
+    class="w-[30rem] h-[30rem] border-[10px] border-white rounded-full mx-auto p-8 relative shadow-[0_0_0_4px_rgba(0,0,0,0.1),inset_0_0_0_3px_#EFEFEF,inset_0_0_10px_black,0_0_10px_rgba(0,0,0,0.2)]"
+  >
+    <div class="relative w-full h-full">
+     
+      <span id="hour" class="clock-hand"></span>
+      <span id="minute" class="clock-hand"></span>
+      <span id="second" class="clock-hand"></span>
+    </div>
+  </div>
+
+  <style>
+    .clock-hand {
+      position: absolute;
+      top: 50%;
+      width: 50%;
+      height: 6px;
+      background-color: rgb(116, 48, 48);
+      transform-origin: right;
+      transition-duration: 50ms;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+  </style>
+</body>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
